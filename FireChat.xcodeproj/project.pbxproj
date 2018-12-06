@@ -14,12 +14,6 @@
 		4C5ED763215FEECB0013E0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5ED762215FEECB0013E0C5 /* Assets.xcassets */; };
 		4C5ED766215FEECB0013E0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5ED764215FEECB0013E0C5 /* LaunchScreen.storyboard */; };
 		4C5ED771215FEECB0013E0C5 /* FireChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED770215FEECB0013E0C5 /* FireChatTests.swift */; };
-		4C5ED79A2160DB5D0013E0C5 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED7942160DB5D0013E0C5 /* LoginPresenter.swift */; };
-		4C5ED79B2160DB5D0013E0C5 /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED7952160DB5D0013E0C5 /* LoginWorker.swift */; };
-		4C5ED79C2160DB5D0013E0C5 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED7962160DB5D0013E0C5 /* LoginRouter.swift */; };
-		4C5ED79D2160DB5D0013E0C5 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED7972160DB5D0013E0C5 /* LoginModels.swift */; };
-		4C5ED79E2160DB5D0013E0C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED7982160DB5D0013E0C5 /* LoginViewController.swift */; };
-		4C5ED79F2160DB5D0013E0C5 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED7992160DB5D0013E0C5 /* LoginInteractor.swift */; };
 		4CAADDD521A4AA3C00B50258 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CAADDD421A4AA3C00B50258 /* GoogleService-Info.plist */; };
 		D807CA1CA8E11AC84B41A518 /* Pods_FireChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A760355662E31EF65E4F65E /* Pods_FireChat.framework */; };
 /* End PBXBuildFile section */
@@ -47,12 +41,6 @@
 		4C5ED76C215FEECB0013E0C5 /* FireChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5ED770215FEECB0013E0C5 /* FireChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireChatTests.swift; sourceTree = "<group>"; };
 		4C5ED772215FEECB0013E0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C5ED7942160DB5D0013E0C5 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		4C5ED7952160DB5D0013E0C5 /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
-		4C5ED7962160DB5D0013E0C5 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		4C5ED7972160DB5D0013E0C5 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
-		4C5ED7982160DB5D0013E0C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4C5ED7992160DB5D0013E0C5 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		4CAADDD421A4AA3C00B50258 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CEF7BF5CF7FCF974055DE78 /* Pods-FireChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireChat/Pods-FireChat.release.xcconfig"; sourceTree = "<group>"; };
 		874045FB9DF44E8BA88BF8EA /* Pods-FireChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireChatTests/Pods-FireChatTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,10 +102,6 @@
 		4C5ED75A215FEECA0013E0C5 /* FireChat */ = {
 			isa = PBXGroup;
 			children = (
-				4C5ED7922160DAEF0013E0C5 /* Workers */,
-				4C5ED7912160DAE80013E0C5 /* Services */,
-				4C5ED7902160DADC0013E0C5 /* Scenes */,
-				4C5ED78F2160DAD70013E0C5 /* Models */,
 				4C5ED75B215FEECA0013E0C5 /* AppDelegate.swift */,
 				4C5ED75D215FEECA0013E0C5 /* ViewController.swift */,
 				4C5ED75F215FEECA0013E0C5 /* Main.storyboard */,
@@ -136,48 +120,6 @@
 				4C5ED772215FEECB0013E0C5 /* Info.plist */,
 			);
 			path = FireChatTests;
-			sourceTree = "<group>";
-		};
-		4C5ED78F2160DAD70013E0C5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4C5ED7902160DADC0013E0C5 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				4C5ED7932160DB480013E0C5 /* Login */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		4C5ED7912160DAE80013E0C5 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		4C5ED7922160DAEF0013E0C5 /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Workers;
-			sourceTree = "<group>";
-		};
-		4C5ED7932160DB480013E0C5 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				4C5ED7942160DB5D0013E0C5 /* LoginPresenter.swift */,
-				4C5ED7952160DB5D0013E0C5 /* LoginWorker.swift */,
-				4C5ED7962160DB5D0013E0C5 /* LoginRouter.swift */,
-				4C5ED7972160DB5D0013E0C5 /* LoginModels.swift */,
-				4C5ED7982160DB5D0013E0C5 /* LoginViewController.swift */,
-				4C5ED7992160DB5D0013E0C5 /* LoginInteractor.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		A9800AF8A3DE018A3159298A /* Frameworks */ = {
@@ -219,6 +161,7 @@
 				4C5ED768215FEECB0013E0C5 /* Sources */,
 				4C5ED769215FEECB0013E0C5 /* Frameworks */,
 				4C5ED76A215FEECB0013E0C5 /* Resources */,
+				4E9FDFD2CFDDAFE652962256 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,6 +233,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E9FDFD2CFDDAFE652962256 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FireChatTests/Pods-FireChatTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireChatTests/Pods-FireChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ACEC5DDBB588051E93BD2ED1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,16 +268,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FireChat/Pods-FireChat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
 				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,14 +340,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C5ED79E2160DB5D0013E0C5 /* LoginViewController.swift in Sources */,
-				4C5ED79A2160DB5D0013E0C5 /* LoginPresenter.swift in Sources */,
 				4C5ED75E215FEECA0013E0C5 /* ViewController.swift in Sources */,
 				4C5ED75C215FEECA0013E0C5 /* AppDelegate.swift in Sources */,
-				4C5ED79F2160DB5D0013E0C5 /* LoginInteractor.swift in Sources */,
-				4C5ED79D2160DB5D0013E0C5 /* LoginModels.swift in Sources */,
-				4C5ED79C2160DB5D0013E0C5 /* LoginRouter.swift in Sources */,
-				4C5ED79B2160DB5D0013E0C5 /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
