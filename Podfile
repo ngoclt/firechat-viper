@@ -10,6 +10,10 @@ end
 
 def app_pods
     pod 'Firebase/Core'
+    pod 'FirebaseUI/Auth'
+    pod 'FirebaseUI/Google'
+    pod 'FirebaseUI/Facebook'
+    
     pod 'MessageKit'
     pod 'SVProgressHUD'
 end
