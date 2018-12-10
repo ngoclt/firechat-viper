@@ -31,6 +31,16 @@
 		4C11EB8621BD5DD600758128 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB8021BD5DD600758128 /* LoginViewController.swift */; };
 		4C11EB8721BD5DD600758128 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB8121BD5DD600758128 /* LoginInteractor.swift */; };
 		4C11EB8821BD5DD600758128 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB8221BD5DD600758128 /* LoginWireframe.swift */; };
+		4C11EB8A21BF00F900758128 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB8921BF00F900758128 /* UserService.swift */; };
+		4C11EB8C21BF04CC00758128 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB8B21BF04CC00758128 /* User.swift */; };
+		4C11EB8E21BF093300758128 /* NameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB8D21BF093300758128 /* NameValidator.swift */; };
+		4C11EB9221BF0F3600758128 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EB9121BF0F3600758128 /* DataManager.swift */; };
+		4C11EBA621BF14A800758128 /* ChannelWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EBA021BF14A800758128 /* ChannelWireframe.swift */; };
+		4C11EBA721BF14A800758128 /* ChannelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EBA121BF14A800758128 /* ChannelInteractor.swift */; };
+		4C11EBA821BF14A800758128 /* ChannelInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EBA221BF14A800758128 /* ChannelInterfaces.swift */; };
+		4C11EBA921BF14A800758128 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EBA321BF14A800758128 /* ChannelViewController.swift */; };
+		4C11EBAA21BF14A800758128 /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C11EBA421BF14A800758128 /* Channel.storyboard */; };
+		4C11EBAB21BF14A800758128 /* ChannelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C11EBA521BF14A800758128 /* ChannelPresenter.swift */; };
 		4C5ED75C215FEECA0013E0C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5ED75B215FEECA0013E0C5 /* AppDelegate.swift */; };
 		4C5ED763215FEECB0013E0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5ED762215FEECB0013E0C5 /* Assets.xcassets */; };
 		4C5ED766215FEECB0013E0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5ED764215FEECB0013E0C5 /* LaunchScreen.storyboard */; };
@@ -75,6 +85,16 @@
 		4C11EB8021BD5DD600758128 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4C11EB8121BD5DD600758128 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		4C11EB8221BD5DD600758128 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		4C11EB8921BF00F900758128 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		4C11EB8B21BF04CC00758128 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4C11EB8D21BF093300758128 /* NameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameValidator.swift; sourceTree = "<group>"; };
+		4C11EB9121BF0F3600758128 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4C11EBA021BF14A800758128 /* ChannelWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelWireframe.swift; sourceTree = "<group>"; };
+		4C11EBA121BF14A800758128 /* ChannelInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInteractor.swift; sourceTree = "<group>"; };
+		4C11EBA221BF14A800758128 /* ChannelInterfaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelInterfaces.swift; sourceTree = "<group>"; };
+		4C11EBA321BF14A800758128 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		4C11EBA421BF14A800758128 /* Channel.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Channel.storyboard; sourceTree = "<group>"; };
+		4C11EBA521BF14A800758128 /* ChannelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelPresenter.swift; sourceTree = "<group>"; };
 		4C5ED758215FEECA0013E0C5 /* FireChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5ED75B215FEECA0013E0C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C5ED762215FEECB0013E0C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,8 +145,9 @@
 		4C11EB1921BB021B00758128 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4C11EB7C21BD5D1200758128 /* Login */,
 				4C11EB3E21BB0B6200758128 /* Root */,
+				4C11EB7C21BD5D1200758128 /* Login */,
+				4C11EB9F21BF14A800758128 /* Channel */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -134,6 +155,7 @@
 		4C11EB3621BB05F900758128 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				4C11EB8B21BF04CC00758128 /* User.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -174,7 +196,7 @@
 				4C11EB6A21BD582E00758128 /* Validators */,
 				4C11EB5F21BD578000758128 /* VIPER */,
 				4C11EB5021BB24D200758128 /* Extensions */,
-				4C11EB5221BB24D200758128 /* DataManagers */,
+				4C11EB5221BB24D200758128 /* Services */,
 				4C11EB5321BB24D200758128 /* Protocols */,
 			);
 			path = Utils;
@@ -188,11 +210,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4C11EB5221BB24D200758128 /* DataManagers */ = {
+		4C11EB5221BB24D200758128 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4C11EB8921BF00F900758128 /* UserService.swift */,
+				4C11EB9121BF0F3600758128 /* DataManager.swift */,
 			);
-			path = DataManagers;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4C11EB5321BB24D200758128 /* Protocols */ = {
@@ -221,6 +245,7 @@
 				4C11EB6B21BD582E00758128 /* EmailValidator.swift */,
 				4C11EB6C21BD582E00758128 /* Validator.swift */,
 				4C11EB6D21BD582E00758128 /* PasswordValidator.swift */,
+				4C11EB8D21BF093300758128 /* NameValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -236,6 +261,19 @@
 				4C11EB8221BD5DD600758128 /* LoginWireframe.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		4C11EB9F21BF14A800758128 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				4C11EBA021BF14A800758128 /* ChannelWireframe.swift */,
+				4C11EBA121BF14A800758128 /* ChannelInteractor.swift */,
+				4C11EBA221BF14A800758128 /* ChannelInterfaces.swift */,
+				4C11EBA321BF14A800758128 /* ChannelViewController.swift */,
+				4C11EBA421BF14A800758128 /* Channel.storyboard */,
+				4C11EBA521BF14A800758128 /* ChannelPresenter.swift */,
+			);
+			path = Channel;
 			sourceTree = "<group>";
 		};
 		4C5ED74F215FEEC90013E0C5 = {
@@ -389,6 +427,7 @@
 				4C5ED766215FEECB0013E0C5 /* LaunchScreen.storyboard in Resources */,
 				4CAADDD521A4AA3C00B50258 /* GoogleService-Info.plist in Resources */,
 				4C5ED763215FEECB0013E0C5 /* Assets.xcassets in Resources */,
+				4C11EBAA21BF14A800758128 /* Channel.storyboard in Resources */,
 				4C11EB8321BD5DD600758128 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,27 +589,36 @@
 			files = (
 				4C11EB5621BB24D200758128 /* UIStoryboard+Helpers.swift in Sources */,
 				4C11EB8821BD5DD600758128 /* LoginWireframe.swift in Sources */,
+				4C11EBAB21BF14A800758128 /* ChannelPresenter.swift in Sources */,
 				4C11EB4421BB1E3C00758128 /* ThemeInitializer.swift in Sources */,
+				4C11EB8C21BF04CC00758128 /* User.swift in Sources */,
 				4C11EB4A21BB1F3200758128 /* FirebaseInitializer.swift in Sources */,
 				4C11EB6921BD57BD00758128 /* BaseWireframe.swift in Sources */,
 				4C11EB8721BD5DD600758128 /* LoginInteractor.swift in Sources */,
+				4C11EBA921BF14A800758128 /* ChannelViewController.swift in Sources */,
 				4C11EB5821BB24D200758128 /* ReusableView.swift in Sources */,
 				4C11EB6E21BD582E00758128 /* EmailValidator.swift in Sources */,
 				4C11EB5721BB24D200758128 /* Reusable.swift in Sources */,
 				4C11EB6721BD57BD00758128 /* InteractorInterface.swift in Sources */,
+				4C11EBA821BF14A800758128 /* ChannelInterfaces.swift in Sources */,
 				4C11EB8521BD5DD600758128 /* LoginPresenter.swift in Sources */,
+				4C11EBA621BF14A800758128 /* ChannelWireframe.swift in Sources */,
 				4C11EB8621BD5DD600758128 /* LoginViewController.swift in Sources */,
 				4C11EB6621BD57BD00758128 /* PresenterInterface.swift in Sources */,
 				4C11EB6F21BD582E00758128 /* Validator.swift in Sources */,
 				4C11EB5E21BD48F700758128 /* RootRouter.swift in Sources */,
 				4C11EB4121BB1DF800758128 /* Constants.swift in Sources */,
+				4C11EB9221BF0F3600758128 /* DataManager.swift in Sources */,
 				4C11EB8421BD5DD600758128 /* LoginInterfaces.swift in Sources */,
 				4C11EB6821BD57BD00758128 /* ViewInterface.swift in Sources */,
 				4C11EB7021BD582E00758128 /* PasswordValidator.swift in Sources */,
 				4C11EB4621BB1E8C00758128 /* Initializable.swift in Sources */,
+				4C11EBA721BF14A800758128 /* ChannelInteractor.swift in Sources */,
+				4C11EB8A21BF00F900758128 /* UserService.swift in Sources */,
 				4C11EB4821BB1EAE00758128 /* SVProgressHudInitializer.swift in Sources */,
 				4C5ED75C215FEECA0013E0C5 /* AppDelegate.swift in Sources */,
 				4C11EB5C21BD48E600758128 /* RootContract.swift in Sources */,
+				4C11EB8E21BF093300758128 /* NameValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

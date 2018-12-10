@@ -10,10 +10,18 @@
 
 import Foundation
 
+
 final class LoginInteractor {
+    
+    private var _userService = UserService()
 }
 
 // MARK: - Extensions -
 
 extension LoginInteractor: LoginInteractorInterface {
+    
+    func signInAnonymously(completion: @escaping LoginCompletionBlock) {
+        _userService.signInAnonymously(completion: completion)
+    }
+
 }

@@ -13,21 +13,68 @@ import UIKit
 final class LoginPresenter {
 
     // MARK: - Private properties -
+    
+    static private let minimumDisplayNameLenght: UInt = 6
+    static private let maximumDisplayNameLenght: UInt = 20
 
     private unowned let _view: LoginViewInterface
     private let _wireframe: LoginWireframeInterface
     private let _interactor: LoginInteractorInterface
+    
+    private let _nameValidator: StringValidator
+    private let _dataManager: DataManager
 
     // MARK: - Lifecycle -
 
-    init(wireframe: LoginWireframeInterface, view: LoginViewInterface, interactor: LoginInteractorInterface) {
+    init(wireframe: LoginWireframeInterface, view: LoginViewInterface, interactor: LoginInteractorInterface, dataManager: DataManager = DataManager.shared) {
         _wireframe = wireframe
         _view = view
         _interactor = interactor
+        
+        _nameValidator = NameValidator(minLength: LoginPresenter.minimumDisplayNameLenght,
+                                       maxLength: LoginPresenter.maximumDisplayNameLenght)
+        _dataManager = dataManager
     }
 }
 
 // MARK: - Extensions -
 
 extension LoginPresenter: LoginPresenterInterface {
+    
+    func didSelectAnonymousSignIn(with name: String?) {
+        guard let _name = name else {
+            showLoginNameEmptyError()
+            return
+        }
+        
+        guard _nameValidator.isValid(_name) else {
+            showLoginNameValidationError()
+            return
+        }
+        
+        _view.showProgressHUD()
+        _interactor.signInAnonymously { [weak self] result, error in
+            self?._view.hideProgressHUD()
+            self?.handleSignInResult(result, error: error)
+        }
+    }
+    
+    private func handleSignInResult(_ result: User?, error: Error?) {
+        if let user = result {
+            _dataManager.user = user
+            _wireframe.navigate(to: .channel)
+        } else if let objError = error as NSError? {
+            _wireframe.showErrorAlert(with: objError.localizedDescription)
+        } else {
+            _wireframe.showErrorAlert(with: "Unexpected error.")
+        }
+    }
+    
+    private func showLoginNameEmptyError() {
+        _wireframe.showAlert(with: "Error", message: "Please enter valid display name.")
+    }
+    
+    private func showLoginNameValidationError() {
+        _wireframe.showAlert(with: "Error", message: "The display name should be from 6 to 20 characters long.")
+    }
 }

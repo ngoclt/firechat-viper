@@ -11,6 +11,7 @@
 import UIKit
 
 enum LoginNavigationOption {
+    case channel
 }
 
 protocol LoginWireframeInterface: WireframeInterface {
@@ -21,7 +22,9 @@ protocol LoginViewInterface: ViewInterface {
 }
 
 protocol LoginPresenterInterface: PresenterInterface {
+    func didSelectAnonymousSignIn(with name: String?)
 }
 
 protocol LoginInteractorInterface: InteractorInterface {
+    func signInAnonymously(completion: @escaping LoginCompletionBlock)
 }

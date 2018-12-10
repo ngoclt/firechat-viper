@@ -19,10 +19,10 @@ protocol WireframeInterface: class {
 
 class BaseWireframe {
 
-    fileprivate unowned var _viewController: UIViewController
+    private unowned var _viewController: UIViewController
     
     //to retain view controller reference upon first access
-    fileprivate var _temporaryStoredViewController: UIViewController?
+    private var _temporaryStoredViewController: UIViewController?
 
     init(viewController: UIViewController) {
         _temporaryStoredViewController = viewController

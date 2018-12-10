@@ -13,7 +13,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+
     lazy var initializers: [Initializable] = [
         SVProgressHudInitializer(),
         ThemeInitializer(),
@@ -25,12 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         initializers.forEach { $0.performInitialization() }
         
-        guard let window = window else {
-            return false
-        }
+        window = UIWindow(frame: UIScreen.main.bounds)
         
-        let rootRouter = RootRouter()
-        rootRouter.presentLoginScreen(in: window)
+        if let wrapedWindow = window {
+            let rootRouter = RootRouter()
+            rootRouter.presentLoginScreen(in: wrapedWindow)
+        }
         
         return true
     }

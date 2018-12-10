@@ -11,6 +11,8 @@ import UIKit
 class RootRouter: RootWireframe {
     
     func presentLoginScreen(in window: UIWindow) {
+        window.backgroundColor = .white
+
         let navigationController = UINavigationController()
         navigationController.isNavigationBarHidden = true
         navigationController.setRootWireframe(LoginWireframe())

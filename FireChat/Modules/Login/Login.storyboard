@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-M6-e7q">
-                                <rect key="frame" x="40" y="232" width="240" height="80"/>
+                                <rect key="frame" x="40" y="372" width="240" height="80"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fWf-mf-3g1">
                                         <rect key="frame" x="8" y="0.0" width="224" height="80"/>
@@ -35,6 +35,9 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="zIc-eW-6fX" id="twa-wV-dlv"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -49,7 +52,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yid-y6-Bn0">
-                                <rect key="frame" x="40" y="328" width="240" height="40"/>
+                                <rect key="frame" x="40" y="468" width="240" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cs4-gw-PeP"/>
@@ -58,6 +61,9 @@
                                 <state key="normal" title="Get started">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButtonActionHandler" destination="zIc-eW-6fX" eventType="touchUpInside" id="yV0-YA-Wja"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,11 +72,15 @@
                             <constraint firstItem="kk1-M6-e7q" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Qkg-Zi-f4T"/>
                             <constraint firstItem="Yid-y6-Bn0" firstAttribute="width" secondItem="kk1-M6-e7q" secondAttribute="width" id="XRU-T1-FdA"/>
                             <constraint firstItem="kk1-M6-e7q" firstAttribute="width" secondItem="Z2g-4m-atm" secondAttribute="width" multiplier="3:4" id="cYt-hh-DMS"/>
-                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="Yid-y6-Bn0" secondAttribute="bottom" constant="200" id="tzP-wr-bJS"/>
+                            <constraint firstItem="3pi-N7-nbV" firstAttribute="bottom" secondItem="Yid-y6-Bn0" secondAttribute="bottom" constant="60" id="tzP-wr-bJS"/>
                             <constraint firstItem="Yid-y6-Bn0" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="xEz-bT-nKO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                     </view>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="gJX-FP-RnA" id="8Rn-qK-mYZ"/>
+                        <outlet property="signInButtonBottomMargin" destination="tzP-wr-bJS" id="8UD-Rd-RPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

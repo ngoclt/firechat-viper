@@ -14,12 +14,12 @@ final class LoginWireframe: BaseWireframe {
 
     // MARK: - Private properties -
 
-    private let storyboard = UIStoryboard(name: "Login", bundle: nil)
+    private let _storyboard = UIStoryboard(name: "Login", bundle: nil)
 
     // MARK: - Module setup -
 
     init() {
-        let moduleViewController: LoginViewController = storyboard.instantiateViewController()
+        let moduleViewController: LoginViewController = _storyboard.instantiateViewController()
         super.init(viewController: moduleViewController)
         
         let interactor = LoginInteractor()
@@ -34,5 +34,15 @@ final class LoginWireframe: BaseWireframe {
 extension LoginWireframe: LoginWireframeInterface {
 
     func navigate(to option: LoginNavigationOption) {
+        switch option {
+        case .channel:
+            _openChannel()
+        }
+    }
+    
+    private func _openChannel() {
+        let wireframe = ChannelWireframe()
+        
+        navigationController?.pushWireframe(wireframe)
     }
 }
