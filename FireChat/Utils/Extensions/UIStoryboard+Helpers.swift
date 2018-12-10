@@ -8,8 +8,6 @@
 
 import UIKit
 
-extension UIViewController: ReusableView { }
-
 extension UIStoryboard {
     func instantiateViewController<T: UIViewController>() -> T {
         return instantiateViewController(withIdentifier: String(describing: T.self)) as! T

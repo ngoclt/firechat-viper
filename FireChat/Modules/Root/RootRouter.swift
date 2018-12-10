@@ -11,7 +11,11 @@ import UIKit
 class RootRouter: RootWireframe {
     
     func presentLoginScreen(in window: UIWindow) {
+        let navigationController = UINavigationController()
+        navigationController.isNavigationBarHidden = true
+        navigationController.setRootWireframe(LoginWireframe())
+        window.rootViewController = navigationController
+        
         window.makeKeyAndVisible()
-//        window.rootViewController = ArticlesRouter.assembleModule()
     }
 }

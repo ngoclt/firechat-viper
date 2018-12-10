@@ -24,7 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         initializers.forEach { $0.performInitialization() }
-
+        
+        guard let window = window else {
+            return false
+        }
+        
+        let rootRouter = RootRouter()
+        rootRouter.presentLoginScreen(in: window)
+        
         return true
     }
 
